@@ -1,0 +1,1 @@
+kill -9 $(netstat -lntp | grep -w "9000" | awk '{split($7, w, "/"); print w[1]}')

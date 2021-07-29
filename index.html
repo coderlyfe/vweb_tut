@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    @css 'assets/main.css'
+</head>
+
+<body>
+<form action="/post_name" method="post">
+    <input type="text" name="n" id="n">
+    <button type="submit">submit</button>
+</form>
+
+    @if show
+    <h1>hello from index.html</h1>
+    @end
+    <br/>
+    <h3>@s</h3>
+
+    @for w in words
+    <ul>
+        <li>@w</li>
+    </ul>
+
+    @end
+</body>
+</html>
